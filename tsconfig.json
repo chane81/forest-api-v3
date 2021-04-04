@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es5", "es6"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "traceResolution": false,
+    "declaration": true,
+    "composite": false,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // export default 한 모듈에 대해서 쓸 수 있게 함(import * as express from 'express' => import Express from 'express')
+    "allowSyntheticDefaultImports": true,
+
+    // import React, { PureComponent } from 'react' 처럼 한줄로 쓸 수 있게 함
+    "esModuleInterop": true,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/src/*": ["./src/*"],
+      "~/config/*": ["./config/*"],
+      "~/utils/*": ["src/utils/*"],
+      "~/entity/*": ["src/entity/*"],
+      "~/repo/*": ["src/repo/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts"]
+}

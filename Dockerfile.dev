@@ -1,0 +1,17 @@
+FROM node:12-alpine
+
+ENV NODE_ENV=development
+
+EXPOSE 4000
+
+WORKDIR /app
+
+COPY ./package*.json ./
+
+RUN yarn
+
+COPY . .
+
+RUN yarn build-dev
+
+CMD ["yarn", "start"]

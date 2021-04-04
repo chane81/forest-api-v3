@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "forest-api",
+      "image": "629900478089.dkr.ecr.ap-northeast-2.amazonaws.com/forest-api",
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 4000
+        }
+      ],
+      "memory": 128
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+**/.circleci/*
+**/.ebextensions/*
+**/.vscode/*
+**/dist/*
+**/node_modules/*
+**/uploads/*

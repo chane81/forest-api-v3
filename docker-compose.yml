@@ -1,0 +1,9 @@
+version: "3"
+services:
+  backend:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    container_name: forest-api
+    ports:
+      - 8080:80
